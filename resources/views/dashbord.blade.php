@@ -5,8 +5,8 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>Laravel 5.4</h1>
-            <p>Ini halaman dua</p>
+            <h1>Dashboard</h1>
+            <p>EMPTY</p>
         </div>
         <!-- /.content -->
     </section>

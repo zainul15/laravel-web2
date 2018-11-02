@@ -14,9 +14,9 @@
                     <input type="text" class="form-control" id="usr" name="nama">
 					<label for="email">Email:</label>
                     <input type="text" class="form-control" id="email" name="email">
-					<label for="nohp">Username:</label>
+					<label for="username">Username:</label>
                     <input type="text" class="form-control" id="un" name="username">
-					<label for="alamat">Password:</label>
+					<label for="password">Password:</label>
                     <input type="text" class="form-control" id="pw" name="password">
                 </div>
                 <div class="form-group">

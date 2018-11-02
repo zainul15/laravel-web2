@@ -17,11 +17,11 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('index');
 });
-Route::get('/halamandua', function () {
-    return view('halamandua');
+Route::get('/profil', function () {
+    return view('profil');
 });
-Route::get('/halamantiga', function () {
-    return view('halamantiga');
+Route::get('/dashbord', function () {
+    return view('dashbord');
 });
 Route::resource('mahasiswa','Mahasiswa');
 Route::resource('user','User');

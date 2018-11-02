@@ -65,7 +65,8 @@ class User extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = ModelUser::where('id',$id)->get();
+		return view('user_edit', compact('data'));
     }
 
     /**
@@ -77,7 +78,13 @@ class User extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = ModelUser::where('id',$id)->first();
+		$data->nama = $request->nama;
+		$data->email = $request->email;
+		$data->username = $request->username;
+		$data->password = $request->password;
+		$data->save();
+		return redirect()->route('user.index')->with('alert-success','Data Berhasil Diubah!');
     }
 
     /**
@@ -88,6 +95,8 @@ class User extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = ModelUser::where('id',$id)->first();
+		$data->delete();
+		return redirect()->route('user.index')->with('alert-success','Data Berhasil Dihapus!');
     }
 }
