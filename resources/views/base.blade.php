@@ -57,6 +57,12 @@
 			<li>
                 <a href="/user/create">- Create User</a>
             </li>
+			<li>
+                <a href="/file">- File</a>
+            </li>
+			<li>
+                <a href="/file/create">- Create File</a>
+            </li>
         </ul>
     </aside>
 

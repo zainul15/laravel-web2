@@ -25,5 +25,6 @@ Route::get('/dashbord', function () {
 });
 Route::resource('mahasiswa','Mahasiswa');
 Route::resource('user','User');
+Route::resource('file','File'); //kanan nama controller //kiri view
 Route::resource('halaman','contoh');
 Route::get('/contoh/tambah', 'contoh@tambah');
